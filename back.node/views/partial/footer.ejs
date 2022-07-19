@@ -1,0 +1,28 @@
+</main>
+<footer class="footer"><p>I'm footer</p></footer>
+<script src="/js/Jquery.js"></script>
+<script src="/js/bootstrap.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".fileUpload").on("change", function () {
+            if (this.files) {
+                for (i = 0; i < this.files.length; i++) {
+                    let reader = new FileReader();
+                    reader.onload = function (event) {
+                        $('<div class="img-wrapper"><img /></div>')
+                            .find('img')
+                            .attr("src", event.target.result)
+                            .end()
+                            .appendTo(".preview-images");
+                    };
+                    reader.readAsDataURL(this.files[i]);
+                }
+            }
+        });
+    });
+</script>
+
+
+</body>
+</html>

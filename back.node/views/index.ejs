@@ -1,0 +1,23 @@
+<%- include('./partial/header.ejs') %>
+    <div class="row">
+        <div class="col-md-12 mt-3 d-flex">
+            <div class="col-md-6">
+                <form class="mt-4 d-inline-flex" action="/upload" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="myFiles" multiple class="fileUpload form-control-file border" />
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr />
+    <div class="preview-images mt-3"></div>
+    <hr />
+    <div class="row">
+        <div class="col-md-12">
+            <% files.forEach(file=> { %>
+                <div class="mt-1"><a href=<%=file.href%>><%=file.name%></a></div>
+                <% }); %>
+        </div>
+    </div>
+    <%- include('./partial/footer.ejs') %>

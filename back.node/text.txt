@@ -1,0 +1,10 @@
+https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application
+
+https://dev.to/dejansdev/simple-crud-app-with-express-js-sqlite-mvc-pattern-4nd8
+
+https://newbedev.com/how-do-you-do-a-for-loop-for-each-in-ejs
+
+https://gabrieleromanato.name/nodejs-the-mvc-design-pattern-and-the-crud-model-in-expressjs
+
+
+
